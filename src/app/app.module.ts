@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from '@shared/components/header/header.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +18,7 @@ import { HeaderModule } from '@shared/components/header/header.module';
     AppRoutingModule,
     GraphQLModule,
     HttpClientModule,
-    HeaderModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

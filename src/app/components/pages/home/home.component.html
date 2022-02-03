@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="container">
+    <form [formGroup]="formContact" novalidate>
+        <span>Age</span><input [class.is-danger]="formContact.get('age').invalid" type="text" name="age" formControlName="age">
+        <span>Name</span><input type="text" name="name" formControlName="name">
+        <span>Terminos</span><input type="checkbox" name="terminos" formControlName="terminos">
+
+        <button (click)="onSubmit()">Enviar</button>
+    </form>
+</div>
